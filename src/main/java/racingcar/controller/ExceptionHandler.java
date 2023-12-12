@@ -9,7 +9,7 @@ public class ExceptionHandler {
         while (true) {
             try {
                 return supplier.get();
-            } catch (Exception e) {
+            } catch (IllegalArgumentException e) {
                 OutputView.printError(e.getMessage());
             }
         }

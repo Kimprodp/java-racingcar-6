@@ -33,7 +33,7 @@ public class InputProcessor {
         try {
             return Integer.parseInt(inputValue);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException(Message.ERROR_NOT_INTEGER.getErrorMessage());
+            throw new IllegalArgumentException(Message.ERROR_NOT_INTEGER.getErrorMessage());
         }
     }
 }
