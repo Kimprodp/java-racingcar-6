@@ -1,6 +1,7 @@
 package racingcar.view;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import racingcar.view.constants.Message;
 
 public class OutputView {
@@ -22,5 +23,10 @@ public class OutputView {
             System.out.println();
         }
         System.out.println();
+    }
+
+    public static void printWinner(List<String> winner) {
+        System.out.print(Message.OUTPUT_RACING_WINNER.getMessage());
+        System.out.print(String.join(", ", winner));
     }
 }

@@ -16,8 +16,7 @@ public class Controller {
         RacingGame racingGame = setRacingGame(cars);
         racingGame.startRacing();
         showRacingResult(racingGame);
-
-
+        printWinner(racingGame);
     }
 
     private List<Car> setCar() {
@@ -61,5 +60,9 @@ public class Controller {
         for (Integer round : racingHistory.getHistory().keySet()) {
             OutputView.printRoundResult(racingHistory.getRoundResult(round));
         }
+    }
+
+    private void printWinner(RacingGame racingGame) {
+        OutputView.printWinner(racingGame.getWinnerName());
     }
 }

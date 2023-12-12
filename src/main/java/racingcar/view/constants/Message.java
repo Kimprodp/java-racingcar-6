@@ -8,7 +8,7 @@ public enum Message {
 
     /* Output */
     OUTPUT_RACING_RESULT("\n" + "실행 결과"),
-    OUTPUT_RACING_WINNER("\n" + "최종 우승자 : %s, %s"),
+    OUTPUT_RACING_WINNER("최종 우승자 : "),
     OUTPUT_ROUND_RESULT("%s : "),
     OUTPUT_FORWARD_RESULT("-"),
 
